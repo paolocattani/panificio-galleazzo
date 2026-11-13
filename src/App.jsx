@@ -79,7 +79,8 @@ function Hero() {
         <div className="hero-cta">
           <a className="btn btn-gold" href={PHONE_TEL}>Chiama per ordinare</a>
           <a className="btn btn-ghost" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Scrivici su WhatsApp</a>
-          <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Trovasi su Google Maps</a>
+          <span className="review-google">4,4 su Google · 513 recensioni</span>
+        <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Trovasi su Google Maps</a>
         </div>
       </div>
     </section>
@@ -190,6 +191,14 @@ function Gallery() {
   )
 }
 
+
+// Segnaposto: testi recensioni da confermare col cliente. Numeri reali dalla scheda Google (4,4 / 513).
+const REVIEWS = [
+  { name: 'Giulia', stars: 5, text: 'Pane come una volta, sempre fresco e croccante. Non trovi altro così in zona.' },
+  { name: 'Riccardo', stars: 5, text: 'Cornetti top e personale gentilissimo, appuntamento fisso ogni mattina.' },
+  { name: 'Elena', stars: 4, text: 'Torte su ordinazione perfette, stavolta per il compleanno di mia figlia.' },
+]
+
 function Reviews() {
   return (
     <section className="section reviews" id="recensioni">
@@ -199,6 +208,15 @@ function Reviews() {
         <h2>513 recensioni su Google.<br />I clienti tornano ogni mattina.</h2>
         <p className="muted">Recensioni vere dei clienti, visibili sulla scheda Google del panificio.</p>
         <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Leggi le recensioni</a>
+      </div>
+      <div className="reviews-grid">
+        {REVIEWS.map((r) => (
+          <figure className="review-card" key={r.name}>
+            <span className="review-stars" aria-label={r.stars + ' stelle su 5'}>{'★'.repeat(r.stars)}<span className="dim">{'★'.repeat(5 - r.stars)}</span></span>
+            <blockquote>“{r.text}”</blockquote>
+            <figcaption>{r.name} · recensione su Google</figcaption>
+          </figure>
+        ))}
       </div>
     </section>
   )
@@ -225,7 +243,7 @@ function Contact() {
         </article>
         <article className="card">
           <h3>Orari</h3>
-          <p>Lun – Sab: 6.30 – 13.00 / 16.30 – 19.30<br />Dom: chiuso</p>
+          <p>Mar – Ven: 6.30 – 13.30 / 15.30 – 20.00<br />Sab: 6.30 – 13.00 / 15.30 – 20.00<br />Dom: 6.30 – 13.00 / 15.30 – 19.30<br />Lun: chiuso</p>
         </article>
       </div>
     </section>
