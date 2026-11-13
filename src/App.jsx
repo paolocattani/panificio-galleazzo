@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const MAPS_URL = 'https://maps.google.com/?cid=17494163896465365060' // placeholder, da confermare
+const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Via+Roma+12+Padova+PD' // segnaposto, da confermare
 const PHONE_DISPLAY = '349 000 0000' // segnaposto, da confermare
 const PHONE_TEL = 'tel:+393490000000'
 const WHATSAPP_URL = 'https://wa.me/393490000000?text=Ciao%2C%20vorrei%20fare%20un%20ordine'
