@@ -79,8 +79,7 @@ function Hero() {
         <div className="hero-cta">
           <a className="btn btn-gold" href={PHONE_TEL}>Chiama per ordinare</a>
           <a className="btn btn-ghost" href={WHATSAPP_URL} target="_blank" rel="noreferrer">Scrivici su WhatsApp</a>
-          <span className="review-google">4,4 su Google · 513 recensioni</span>
-        <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Trovasi su Google Maps</a>
+          <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Trovasi su Google Maps</a>
         </div>
       </div>
     </section>
@@ -207,6 +206,7 @@ function Reviews() {
         <p className="eyebrow">Recensioni</p>
         <h2>513 recensioni su Google.<br />I clienti tornano ogni mattina.</h2>
         <p className="muted">Recensioni vere dei clienti, visibili sulla scheda Google del panificio.</p>
+        <span className="review-google">4,4 su Google · 513 recensioni</span>
         <a className="btn btn-ghost" href={MAPS_URL} target="_blank" rel="noreferrer">Leggi le recensioni</a>
       </div>
       <div className="reviews-grid">
