@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
-const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Via+Roma+12+Padova+PD' // segnaposto, da confermare
-const PHONE_DISPLAY = '349 000 0000' // segnaposto, da confermare
-const PHONE_TEL = 'tel:+393490000000'
-const WHATSAPP_URL = 'https://wa.me/393490000000?text=Ciao%2C%20vorrei%20fare%20un%20ordine'
+const MAPS_URL = 'https://www.google.com/maps/search/?api=1&query=Via+Roma+12+Ponte San Nicolò+PD' // segnaposto, da confermare
+const PHONE_DISPLAY = '348 424 0495' // segnaposto, da confermare
+const PHONE_TEL = 'tel:+393484240495'
+const WHATSAPP_URL = 'https://wa.me/393484240495?text=Ciao%2C%20vorrei%20fare%20un%20ordine'
 
 const NAV = [
   { href: '#servizi', label: 'Servizi' },
@@ -34,7 +34,7 @@ const FAQS = [
   { q: 'Fate torte su ordinazione?', a: "Sì, prenotando con qualche giorno d'anticipo: chiamaci o scrivici su WhatsApp." },
   { q: 'Accettate carte e pagamenti digitali?', a: 'Sì, accettiamo contanti, carte e pagamenti contactless.' },
   { q: 'Consegnate a domicilio?', a: 'Al momento il ritiro è in negozio: per quantità grandi chiamaci e troviamo una soluzione.' },
-  { q: 'Dove siete?', a: 'In Via Roma 12 a Padova (PD). Parcheggio comodo nei dintorni.' },
+  { q: 'Dove siete?', a: 'In Piazza Falcone e Borsellino 15 a Ponte San Nicolò (PD). Parcheggio comodo nei dintorni.' },
 ]
 
 // Galleria: 6 foto di esempio, da sostituire con le foto vere del panificio
@@ -73,7 +73,7 @@ function Hero() {
       <img className="hero-img" src="./hero.jpg" alt="Interno del panificio: pane fresco sul banco in legno" />
       <div className="hero-overlay" />
       <div className="hero-content">
-        <p className="eyebrow">Panificio · Padova</p>
+        <p className="eyebrow">Panificio · Pasticceria · Ponte San Nicolò</p>
         <h1>Il pane di una volta, <em>ogni mattina</em>.</h1>
         <Badge />
         <div className="hero-cta">
@@ -214,7 +214,7 @@ function Contact() {
       <div className="grid contact-grid">
         <article className="card">
           <h3>Dove siamo</h3>
-          <p>Via Roma 12<br />35100 Padova (PD)</p>
+          <p>Piazza Falcone e Borsellino 15<br />35100 Ponte San Nicolò (PD)</p>
           <a className="link" href={MAPS_URL} target="_blank" rel="noreferrer">Apri su Google Maps →</a>
         </article>
         <article className="card">
